@@ -1,3 +1,26 @@
+@font-face {
+  font-family: 'Jua';
+  src: url('./fonts/Jua.woff2') format('woff2');
+}
+body{
+    background-color: #a0ffa0;
+    font-family: 'Jua'
+}
+main {
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 16px;
+    padding: 16px;
+    margin: 40px 0;
+    max-width: 600px;
+}
+h1 {
+    background-color: #a0a0ff;
+    border: none;
+    border-radius: 16px;
+    padding: 16px;
+    margin: 40px 0;
+}
 a{
     text-decoration: none;
 }

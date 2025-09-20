@@ -3,7 +3,7 @@
   src: url('./fonts/Jua.woff2') format('woff2');
 }
 body{
-    background-color: #a0ffa0;
+    background-color: #e0ffe0;
     font-family: 'Jua'
 }
 main {
@@ -11,15 +11,16 @@ main {
     border: none;
     border-radius: 16px;
     padding: 16px;
-    margin: 40px 0;
+    margin: 20px 0;
     max-width: 600px;
 }
-h1 {
+header {
     background-color: #a0a0ff;
     border: none;
     border-radius: 16px;
-    padding: 16px;
-    margin: 40px 0;
+    padding: 4px;
+    margin: 20px 0;
+    text-align: center;
 }
 a{
     text-decoration: none;
@@ -32,4 +33,16 @@ a:visited{
 }
 a:hover{
     color: rgb(255, 80, 80)
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+ul li::before{
+    content: "➤";
+    color: #000000;
+    margin-right: 8px;
+}
+ul li{
+  margin-left: 20px;
 }

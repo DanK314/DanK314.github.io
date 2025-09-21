@@ -6,14 +6,6 @@ body{
     background-color: rgba(224,255,224,1);
     font-family: 'Jua'
 }
-main{
-    background-color: rgba(224,224,224,1);
-    border: none;
-    border-radius: 16px;
-    padding: 16px;
-    margin: 20px 0;
-    max-width: 600px;
-}
 header{
     background-color: rgba(160, 160, 255, 1);
     border: none;
@@ -22,40 +14,53 @@ header{
     margin: 10px 0;
     text-align: center;
 }
-h1{
-    font-size: 40px;
-}
-h2{
-    font-size: 30px;
-    margin: 0px;
+menu {
+    margin: 0;
+    width: 100%;
+    border: 3px solid rgba(0,0,0,1);
     padding: 0px;
-    display: inline-block;
+    text-align: center;
+    font-size: 32px;
+    border-radius: 16px;
+    background-color: rgba(200,200,255,1);
+}
+menu ul{
+    margin: 0px 4px;
+    padding:0px 4px;
+}
+menu li{
+    margin:0px 0px;
+    padding: 0px 10px;
+    border-left: 3px solid rgba(0,0,0,1);
+    display: inline;
+    list-style-type: none;
+}
+menu ul li:first-child{
+    border-left: none;
+}
+main{
+    display: none;
+    border-radius: 16px;
+    background-color: rgba(200, 200, 200, 1);
+    padding: 4px;
+    margin: 4px;
+}
+main.active{
+    display: block;
 }
 a{
     text-decoration: none;
-    transition: color 0.1s ease;
-}
-a:link{
-    color: rgb(80, 80, 255);
+    color: rgba(80,80,255,1);
+    transition: color 0.3s ease;
 }
 a:visited{
-    color: rgb(80,80,255);
+    color: rgba(80,80,255,1);
 }
 a:hover{
-    color: rgb(255, 80, 80);
+    color: rgba(255,80,80,1);
 }
-ul{
-    list-style: none;
-    padding-left: 0;
-}
-ul li::before{
-    content: "➤";
-    color: #000000;
-    margin-right: 8px;
-}
-ul li{
-  margin-left: 20px;
-}
+h1{font-size: 64px;}
+
 .cursor {
   position: absolute;
   width: 20px;

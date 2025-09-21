@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'Jua';
+  src: url('./fonts/Jua.woff2') format('woff2');
+}
+body{
+    background-color: rgba(224,255,224,1);
+    font-family: 'Jua'
+}
+main{
+    background-color: rgba(224,224,224,1);
+    border: none;
+    border-radius: 16px;
+    padding: 16px;
+    margin: 20px 0;
+    max-width: 600px;
+}
+header{
+    background-color: rgba(160, 160, 255, 1);
+    border: none;
+    border-radius: 16px;
+    padding: 2px;
+    margin: 10px 0;
+    text-align: center;
+}
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    transition: color 0.1s ease;
+}
+a:link{
+    color: rgb(80, 80, 255);
+}
+a:visited{
+    color: rgb(80,80,255);
+}
+a:hover{
+    color: rgb(255, 80, 80);
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+ul li::before{
+    content: "➤";
+    color: #000000;
+    margin-right: 8px;
+}
+ul li{
+  margin-left: 20px;
+}
+.cursor {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  transition: transform 0.1s ease;
+  transform: scale(1);
+}
+
+.cursor-active {
+  transform: scale(1.5);
+  background-color: rgba(255, 255, 255, 0.5);
+}
